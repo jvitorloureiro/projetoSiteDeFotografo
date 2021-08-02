@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fellipe Braga Fotografia</title>
+        <link rel="icon" href="./img/icon.svg">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/orcamento.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+
+            <div class="cabecalho">
+                <div class="cabecalho__caixa">
+                    <div class="cabecalho__logo"></div>
+                    
+                    <nav class="cabecalho__menu">
+                        <ul class="cabecalho__menu___lista">
+                            <li class="item-menu">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="item-menu selecionado">
+                                <a href="">Orçamento</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="portifolio.html">Portifólio</a>
+                                   
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
+        </header>
+
+        <main>
+
+            <div class="formulario">
+                <h1>Faça seu orçamento</h1>
+                <h2>Preencha o formulário e nós enviaremos o seu orçamento por E-mail e Whatsapp.</h2>
+                <form class="formulario__conteudo">
+                    <label for="nome-completo">Nome completo</label>
+                    <input type="text" class="formulario__input-padrao" id="nome-completo" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" class="formulario__input-padrao" id="email" required>
+
+                    <label for="telefone">Telefone de contato</label>
+                    <input type="tel" class="formulario__input-padrao" id="telefone" required>
+                    
+                    <label for="data-evento">Data e hora do inicio do evento</label>
+                    <input type="datetime-local" class="formulario__input-padrao" id="data-evento" required>
+
+                    <label for="local">Local do evento</label>
+                    <input type="text" class="formulario__input-padrao" id="local" required>
+
+                    <fieldset>
+                        <legend>Qual o tipo de evento?</legend>
+                        <select>
+                            <option>Casamento</option>
+                            <option>Corporativo</option>
+                            <option>Aniversário</option>
+                            <option>Debutante</option>
+                            <option>Bodas</option>
+                            <option>Outros</option>
+                        </select>
+                    </fieldset>
+                    
+                    <label class="formulario__mensagem" for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-caixa">
+                <h3 class="footer-caixa__texto">Todos os direitos reservados &#169;</h3>
+            </div>
+        </footer>
+
+
+    </body>
